@@ -1,0 +1,63 @@
+body{
+    background-image: url("images/day.avif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 5%;
+    font-family: "Arimo",sans-serif;
+    color: white;
+}
+.flex-item strong{
+    color: skyblue;
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+.flex-item h1{
+    font-size: 50px;
+    color: white;
+}
+.flex-item p{
+    color: white;
+}
+.flex-container{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   align-content: center;
+}
+.flex-item{
+    background-color: rgb(217, 217, 217,0.3);
+    height: 200px;
+    width: 200px;
+    margin: 2px;
+    text-align: center;
+}
+.flex-item-3{
+    width: 500px;
+    flex-grow: 1;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    margin: 1rem;
+}
+.grid-item{
+    text-align: center;
+}
+form{
+    display: flex;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-top: 1px ;
+    font-size: 30px;
+    font-weight: 700;
+}
+input{
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    border: 2px solid white;
+    border-radius: 0.2rem;
+}

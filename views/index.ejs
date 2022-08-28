@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7851366c3f.js" crossorigin="anonymous"></script>
+</head>
+<body <% if(mode==='n'){ %> 
+        style="background-image: url('images/night.jpg')"  
+    <% } %>  
+    >
+    <form method="post" action="/">
+        <label for="bar">Search</label>
+        <input type="text" name="cityName" id="bar">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass "></i></button>
+    </form> 
+    <div>
+        <h1><%= cityName %> </h1>
+        <p><%= description %></p>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item flex-item-1">
+            <strong>Temperature</strong>
+            <h1><%= degrees %> &#8451;</h1>
+        </div>
+        <div class="flex-item flex-item-2">
+            <strong>Humidity</strong>
+            <h1><%= humidity %>  %</h1>
+        </div>
+        <div class="flex-item flex-item-3">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <strong>Pressure</strong>
+                    <p><%= pressure %> </p>
+                </div>
+                <div class="grid-item">
+                    <strong>Visibility</strong>
+                    <p><%= visibility %> </p>
+                </div>
+                <div class="grid-item">
+                    <strong>Wind</strong>
+                    <p><%= wind %>  mph</p>
+                </div>
+                <div class="grid-item">
+                    <strong>Feels Like</strong>
+                    <p><%= feels %> </p>
+                </div>
+                <div class="grid-item">
+                    <strong>Max Temperature</strong>
+                    <p><%= maxTemp %> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

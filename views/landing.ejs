@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/7851366c3f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <form method="post" action="/">
+        <label for="bar">Search</label>
+        <input type="text" name="cityName" id="bar">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass "></i></button>
+    </form>
+    <div class="flex-container" style="margin-top: 80px;">
+        <div class="flex-item " style="margin: 50px;">
+            <strong>Karachi</strong>
+            <h1><%= kTemp %> &#8451;</h1>
+        </div>
+        <div class="flex-item" style="margin: 50px;">
+            <strong>New York</strong>
+            <h1><%= nTemp %> &#8451;</h1>
+        </div>
+        <div class="flex-item" style="margin: 50px;">
+            <strong>London</strong>
+            <h1><%= lTemp %> &#8451;</h1>
+        </div>
+        <div class="flex-item" style="margin: 50px;">
+            <strong>Paris</strong>
+            <h1><%= pTemp %> &#8451;</h1>
+        </div>
+    </div>
+</body>
+</html>
